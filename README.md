@@ -29,9 +29,40 @@ Once you've completed a task make sure to push (`git push`) everything and creat
 Before creating a pull request remember to get the latest changes (`git pull`).
 This is one place where conflicts may occur (hint - this is when rebases are useful).
 
-# Requirements 
+## Contributors
+ Current team members:
+ - David Ting (Team Lead)
+ - Mitchell Hargreaves
+ - Stephen Bajan
+ - Kamron Bhavnagri
+ - Rafique Anwar
+ - Peter Kaltzis
 
-The following pyhton modules/libraries are required:
+ Project alumni:
+ - Aryan Faghihi
+ - Johnny Liaw
+ - Matthew Timms
+ - Kareeb Hasan
+
+ # How to contribute:
+ To run the code first fork or clone the git repo using
+ `git clone https://github.com/KamWithK/GitWorkshop.git`
+and create a conda environment to handle the project dependencies.
+`conda env create -f environment.yml`
+Install dependencies with
+`conda env update -f environment.yml --prune`
+
+*To update dependencies simply run `conda update --all` for packages and `conda update -n base -c defaults conda` for conda itself!*
+
+# Recommended min specs:
+- Linux (known issues with Windows installation)
+- GPU: Requires CUDA version > 3.5
+- CPU: Intel i7-4800
+- RAM: >8GB DDR3
+
+## Requirements 
+
+The following python modules/libraries are required:
 
 - **scipy** - for 2D/3D image processing utilities. 
 - **pydicom** - for processing CT images in DICOM format
