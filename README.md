@@ -59,3 +59,17 @@ Install dependencies with
 - GPU: Requires CUDA version > 3.5
 - CPU: Intel i7-4800
 - RAM: >8GB DDR3
+
+## Requirements 
+
+The following python modules/libraries are required:
+
+- **scipy** - for 2D/3D image processing utilities. 
+- **pydicom** - for processing CT images in DICOM format
+- **matplotlib** - for plotting/Graphing
+- **pytorch** - for training deep neural network models
+- **torchvision** - for preprocessing image dataset.
+- **mayavi** - for rendering 3D visualisation.
+
+![Image of generator results](./Results/GeneratorResults.png)
+
