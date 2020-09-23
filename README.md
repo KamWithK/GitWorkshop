@@ -28,3 +28,12 @@ Once you've completed a task make sure to push (`git push`) everything and creat
 
 Before creating a pull request remember to get the latest changes (`git pull`).
 This is one place where conflicts may occur (hint - this is when rebases are useful).
+
+#Project Decription 
+Reconstructing facial features from skeletal remains using CT scans.
+
+The aim of this project is to create, implement and train a set of neural network models that accurately generates reconstructed generalised 3D volume images from 3D CT skeletal head scans.
+Identifying skeletal remains is a challenging problem which typically can involve sketching or rebuilding the original face using modelling clay. 
+This project attempts to use CT scans to generate the face more accurately without the need for these methods. 
+The project takes a skull as input and uses a Generative Advesarial Network (GAN) to reconstruct facial tissue on top of the skull which is then compared to the original flesh. 
+The project will not only investigate a 3D approach, but also trial using 2.5D Depth Map representations of the front of the 3D skull and flesh as input and label, respectively. 
