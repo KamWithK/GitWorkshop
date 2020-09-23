@@ -29,8 +29,7 @@ Once you've completed a task make sure to push (`git push`) everything and creat
 Before creating a pull request remember to get the latest changes (`git pull`).
 This is one place where conflicts may occur (hint - this is when rebases are useful).
 
-
-# Project Decription 
+## Project Decription 
 Reconstructing facial features from skeletal remains using CT scans.
 
 The aim of this project is to create, implement and train a set of neural network models that accurately generates reconstructed generalised 3D volume images from 3D CT skeletal head scans.
@@ -39,7 +38,18 @@ This project attempts to use CT scans to generate the face more accurately witho
 The project takes a skull as input and uses a Generative Advesarial Network (GAN) to reconstruct facial tissue on top of the skull which is then compared to the original flesh. 
 The project will not only investigate a 3D approach, but also trial using 2.5D Depth Map representations of the front of the 3D skull and flesh as input and label, respectively. 
 
-# Contributors
+## Project timeline:
+Completed targets:
+1. Converting .dicom files to .npy files and filtering and thresholding CT scans to produce data on skull location.
+2. Implementation of new metrics to improve the training of the model.
+Future targets:
+1. Nov 2020 - Complete preprocess pipeline for cleaning of .npy files (removal of unecessary data, image cropping).
+2. Nov 2020 - Research pre-trained weights for model implementation and acheive functional stability.
+3. Dec 2021 - Implement Weights & Biases to allow hyperparameter tuning and model optimisation.
+4. Mar 2021 - Submit conference paper for Miccai (March 2021 submission for August 2021 Conference). Current goal is to submit two distinct papers for both the 2D depth map and 3D volumetric deep learning methods.
+5. Jan 2022 - Use it to "solve code" by 2022.
+
+## Contributors:
  Current team members:
  - David Ting (Team Lead)
  - Mitchell Hargreaves
@@ -54,7 +64,7 @@ The project will not only investigate a 3D approach, but also trial using 2.5D D
  - Matthew Timms
  - Kareeb Hasan
 
- # How to contribute:
+ ## How to contribute:
  To run the code first fork or clone the git repo using
  `git clone https://github.com/KamWithK/GitWorkshop.git`
 and create a conda environment to handle the project dependencies.
@@ -64,13 +74,13 @@ Install dependencies with
 
 *To update dependencies simply run `conda update --all` for packages and `conda update -n base -c defaults conda` for conda itself!*
 
-# Recommended min specs:
+## Recommended min specs:
 - Linux (known issues with Windows installation)
 - GPU: Requires CUDA version > 3.5
 - CPU: Intel i7-4800
 - RAM: >8GB DDR3
 
-## Requirements 
+## Requirements:
 
 The following python modules/libraries are required:
 
