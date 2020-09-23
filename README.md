@@ -30,12 +30,57 @@ Before creating a pull request remember to get the latest changes (`git pull`).
 This is one place where conflicts may occur (hint - this is when rebases are useful).
 
 ## Project timeline:
-# Completed targets:
+Completed targets:
 1. Converting .dicom files to .npy files and filtering and thresholding CT scans to produce data on skull location.
 2. Implementation of new metrics to improve the training of the model.
-# Future targets:
+Future targets:
 1. Nov 2020 - Complete preprocess pipeline for cleaning of .npy files (removal of unecessary data, image cropping).
 2. Nov 2020 - Research pre-trained weights for model implementation and acheive functional stability.
 3. Dec 2021 - Implement Weights & Biases to allow hyperparameter tuning and model optimisation.
 4. Mar 2021 - Submit conference paper for Miccai (March 2021 submission for August 2021 Conference). Current goal is to submit two distinct papers for both the 2D depth map and 3D volumetric deep learning methods.
 5. Jan 2022 - Use it to "solve code" by 2022.
+
+## Contributors:
+ Current team members:
+ - David Ting (Team Lead)
+ - Mitchell Hargreaves
+ - Stephen Bajan
+ - Kamron Bhavnagri
+ - Rafique Anwar
+ - Peter Kaltzis
+
+ Project alumni:
+ - Aryan Faghihi
+ - Johnny Liaw
+ - Matthew Timms
+ - Kareeb Hasan
+
+ ## How to contribute:
+ To run the code first fork or clone the git repo using
+ `git clone https://github.com/KamWithK/GitWorkshop.git`
+and create a conda environment to handle the project dependencies.
+`conda env create -f environment.yml`
+Install dependencies with
+`conda env update -f environment.yml --prune`
+
+*To update dependencies simply run `conda update --all` for packages and `conda update -n base -c defaults conda` for conda itself!*
+
+## Recommended min specs:
+- Linux (known issues with Windows installation)
+- GPU: Requires CUDA version > 3.5
+- CPU: Intel i7-4800
+- RAM: >8GB DDR3
+
+## Requirements:
+
+The following python modules/libraries are required:
+
+- **scipy** - for 2D/3D image processing utilities. 
+- **pydicom** - for processing CT images in DICOM format
+- **matplotlib** - for plotting/Graphing
+- **pytorch** - for training deep neural network models
+- **torchvision** - for preprocessing image dataset.
+- **mayavi** - for rendering 3D visualisation.
+
+![Image of generator results](./Results/GeneratorResults.png)
+
