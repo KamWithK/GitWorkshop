@@ -28,3 +28,14 @@ Once you've completed a task make sure to push (`git push`) everything and creat
 
 Before creating a pull request remember to get the latest changes (`git pull`).
 This is one place where conflicts may occur (hint - this is when rebases are useful).
+
+## Project timeline:
+# Completed targets:
+1. Converting .dicom files to .npy files and filtering and thresholding CT scans to produce data on skull location.
+2. Implementation of new metrics to improve the training of the model.
+# Future targets:
+1. Nov 2020 - Complete preprocess pipeline for cleaning of .npy files (removal of unecessary data, image cropping).
+2. Nov 2020 - Research pre-trained weights for model implementation and acheive functional stability.
+3. Dec 2021 - Implement Weights & Biases to allow hyperparameter tuning and model optimisation.
+4. Mar 2021 - Submit conference paper for Miccai (March 2021 submission for August 2021 Conference). Current goal is to submit two distinct papers for both the 2D depth map and 3D volumetric deep learning methods.
+5. Jan 2022 - Use it to "solve code" by 2022.
